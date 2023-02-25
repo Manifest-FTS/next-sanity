@@ -13,10 +13,13 @@
     "template"
   ],
   "scripts": {
-    "dev": "next dev && sanity dev",
-    "build": "next build && sanity build",
-    "start": "next start && sanity start",
-    "deploy": "sanity deploy",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "sdev": "sanity dev",
+    "sbuild": "sanity build",
+    "sstart": "sanity start",
+    "sdeploy": "sanity deploy",
     "lint": "next lint",
     "deploy-graphql": "sanity graphql deploy"
   },
@@ -25,6 +28,7 @@
     "@sanity/color": "^2.1.20",
     "@sanity/color-input": "^3.0.1",
     "@sanity/icons": "^2.0.0",
+    "@sanity/ui": "^1.2.5",
     "@sanity/vision": "^3.0.0",
     "@types/lodash.get": "^4.4.7",
     "@types/node": "18.14.1",
@@ -41,7 +45,7 @@
     "sanity-plugin-hotspot-array": "^1.0.0",
     "sanity-plugin-media": "^2.0.2",
     "slug": "^8.2.2",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.1",
