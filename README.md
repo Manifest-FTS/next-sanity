@@ -1,38 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Starter with integrated Sanity Studio
 
-## Getting Started
+I found myself manually creating merging Next.JS and Sanity projects and debugging many of the same issues each time. I created this starter with the latest [Next.js][nextjs] (frontend) and [Sanity][sanity-website] (content backend) to quickstart my next sanity project. I've debugged the dependencie errors once and for all, though some warnings may still exist. 
 
-First, run the development server:
+Sanity Studio offers an amazing content editing experience for my ManifestFTS clients such as  instant side-by-side content previews, really real-time collaboration, and human-error handling build it. It also offers an equaly awesome software engineering experience and the ability to engineer custom admin interfaces using [Sanity Structure Builder][sanity-structure-builder]
+
+Sanity Studio connects directly to [Content Lake][sanity-content-lake], where content is stored. Once your Sanity project is deploy this means real-time editing of production content with your local development environment.
+Enjoy this Next.JS Sanity starter with ready-to-go ecommerce and blog [structure/schemas?][sanity-schema-types] and let me know what you think.
+
+[![Deploy with Vercel](https://vercel.com/button)][vercel-deploy]
+
+> **TLDRQ (The low-down right quick!**
+>
+> During installation I opted for the following: TypeScript (yes), src directory (no), I prefer `/pages` for Next.js routing.
+>
+> Experimental [/app][app-dir] directory = (no) I use this starter for production sites. Feel free to help update this repo once Vercel announces the app directory is ready for production.
+
+## Sanity CLI
+
+You should already have [Sanity CLI][sanity-cli] setup and your own Project ID and API Token 
+
+## Quickstart
+
+Clone the repo or download the zip file manally and extract into a new root project directory
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone git@github.com:Manifest-FTS/next-sanity.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install packages
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm i or npm i
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Update your Sanity Config files (sanity.cli.ts and sanity.config.ts) with your project ID and API token. Then start it up!
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+pnpm dev or npm dev (for Next.JS)
+pnpm sdev or npm sdev (for Sanity)
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Credits & Thank You's
 
-## Learn More
+- [Sanity's helpful Slack Community ][sanity-community]
+- [Cody Olsen's Next/Sanity README file][cody]
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[cody][https://www.sanity.io/exchange/community/stipsan]
+[sanity-cli]: https://www.sanity.io/docs/getting-started-with-sanity-cli
+[nextjs]: https://github.com/vercel/next.js
+[sanity-content-lake]: https://www.sanity.io/docs/datastore
+[sanity-website]: https://www.sanity.io?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
+[sanity-community]: https://slack.sanity.io/
+[sanity-schema-types]: https://www.sanity.io/docs/schema-types?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
+[sanity-structure-builder]: https://www.sanity.io/docs/structure-builder-introduction
+[app-dir]: https://beta.nextjs.org/docs/routing/fundamentals#the-app-directory
