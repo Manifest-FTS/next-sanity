@@ -7,7 +7,6 @@ Sanity Studio offers an amazing content editing experience for my ManifestFTS cl
 Sanity Studio connects directly to [Content Lake][sanity-content-lake], where content is stored. Once your Sanity project is deploy this means real-time editing of production content with your local development environment.
 Enjoy this Next.JS Sanity starter with ready-to-go ecommerce and blog [structure/schemas?][sanity-schema-types] and let me know what you think.
 
-[![Deploy with Vercel](https://vercel.com/button)][vercel-deploy]
 
 > **TLDRQ (The low-down right quick!**
 >
