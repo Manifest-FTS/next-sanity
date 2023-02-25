@@ -5,7 +5,7 @@ specifiers:
   '@sanity/color': ^2.1.20
   '@sanity/color-input': ^3.0.1
   '@sanity/eslint-config-studio': ^2.0.1
-  '@sanity/icons': ^2.0.0
+  '@sanity/icons': ^2.2.2
   '@sanity/ui': ^1.2.5
   '@sanity/vision': ^3.0.0
   '@types/lodash.get': ^4.4.7

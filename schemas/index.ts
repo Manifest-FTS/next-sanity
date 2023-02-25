@@ -15,10 +15,11 @@ const annotations = [
 import collection from './documents/collection'
 import colorTheme from './documents/colorTheme'
 import page from './documents/page'
+import blogPost from './documents/blogPost'
 import product from './documents/product'
 import productVariant from './documents/productVariant'
 
-const documents = [collection, colorTheme, page, product, productVariant]
+const documents = [collection, colorTheme, page, blogPost, product, productVariant]
 
 // Singleton document types
 import home from './singletons/home'
@@ -32,6 +33,9 @@ import body from './blocks/body'
 const blocks = [body]
 
 // Object types
+import blogAuthor from './objects/blogAuthor'
+import blogBlockContent from './objects/blogBlockContent'
+import blogCategory from './objects/blogCategory'
 import customProductOptionColor from './objects/customProductOption/color'
 import customProductOptionSize from './objects/customProductOption/size'
 import imageWithProductHotspots from './objects/imageWithProductHotspots'
@@ -64,6 +68,9 @@ import shopifyProduct from './objects/shopifyProduct'
 import shopifyProductVariant from './objects/shopifyProductVariant'
 
 const objects = [
+  blogAuthor,
+  blogBlockContent,
+  blogCategory,
   customProductOptionColor,
   customProductOptionSize,
   imageWithProductHotspots,
